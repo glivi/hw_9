@@ -1,0 +1,380 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap");
+/* CSS reset start */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol,
+ul {
+	list-style: none;
+}
+blockquote,
+q {
+	quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: "";
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* CSS reset end */
+
+/*  Colors start */
+:root {
+	--text-color: #4b4b4b;
+	--accent-color: #f2726f;
+	--primary-color: #5d62b5;
+}
+/*  Colors end */
+
+/* Custom styles start */
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	overflow-x: hidden;
+}
+
+body {
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 16px;
+	line-height: 150%;
+}
+
+img {
+	width: 100%;
+	height: auto;
+}
+/* Custom styles end */
+
+/* Custom classes start */
+._container {
+	max-width: 1050px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.section-subtitle {
+	position: relative;
+	padding-left: 30px;
+	margin-bottom: 25px;
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 200%;
+	letter-spacing: 2.5px;
+	text-transform: uppercase;
+	color: var(--primary-color);
+}
+.section-subtitle::before {
+	content: "";
+	position: absolute;
+	left: -6px;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 27px;
+	height: 27px;
+	background-image: url("../img/mark.png");
+}
+
+.section-subtilte_white {
+	color: #fff;
+}
+
+.section-subtilte_white::before {
+	background-image: url("../img/impact/mark-white.svg");
+}
+
+.title {
+	font-weight: 900;
+	font-size: 36px;
+	line-height: 117%;
+	color: #000000;
+}
+
+.title-card {
+	margin-bottom: 15px;
+	font-weight: 900;
+	font-size: 19px;
+	line-height: 137%;
+	color: var(--accent-color);
+}
+
+.text {
+	letter-spacing: 0.15px;
+	color: var(--text-color);
+}
+/* Custom classes end */
+
+/* Section promise start */
+.promise {
+	background-color: #f5f5f5;
+	padding-top: 90px;
+	padding-bottom: 120px;
+}
+.promise__title {
+	margin-bottom: 55px;
+}
+.promise__items {
+	overflow: auto;
+}
+.promise__item {
+	padding-left: 86px;
+	padding-right: 7px;
+	width: 33%;
+	float: left;
+}
+.promise__item:not(:last-child) {
+	margin-bottom: 30px;
+}
+.promise__img {
+	width: 63px;
+	margin-left: -86px;
+}
+.promise__descr {
+	margin-top: -28%;
+}
+.promise__item-title {
+}
+.promise__text {
+}
+/* Section promise end */
+
+/* Section services start */
+.services {
+	padding-top: 110px;
+	padding-bottom: 110px;
+	background-color: #f5f5f5;
+	background-image: url("../img/services/bg-1.svg");
+	background-repeat: no-repeat;
+	background-position: 100% -365px;
+	background-size: contain;
+}
+
+.services__title {
+	margin-bottom: 60px;
+}
+.services__cards {
+	display: flex;
+	margin-right: -24px;
+	flex-wrap: wrap;
+}
+.services__card {
+	margin: 0px 24px 24px 0px;
+}
+.card-services {
+	flex: 0 0 calc((316 / 1020) * 100%);
+	background-color: #fff;
+	padding: 50px 44px;
+	text-align: center;
+	border-radius: 20px;
+	transition: all 0.3s ease 0s;
+}
+
+.card-services:hover {
+	filter: drop-shadow(0px 8px 16px rgba(38, 38, 38, 0.24)) drop-shadow(0px 16px 24px rgba(38, 38, 38, 0.2));
+}
+.card-services__img {
+	width: 63px;
+	margin: 0 auto;
+	margin-bottom: 27px;
+}
+.card-services__title {
+}
+.card-services__text {
+	max-height: 99px;
+	overflow-y: auto;
+}
+/* Section services end */
+
+/* Section impact start */
+.impact {
+	padding-top: 112px;
+	padding-bottom: 212px;
+	background-color: #29c3be;
+	background-image: url("../img/impact/bg-2.png");
+	background-repeat: no-repeat;
+	background-position-x: 90%;
+}
+.impact__body {
+	position: relative;
+}
+.impact__info {
+}
+.impact__subtitle {
+}
+.impact__title {
+	margin-bottom: 65px;
+	color: #fff;
+	max-width: 411px;
+}
+.impact__list {
+	display: flex;
+	justify-content: space-between;
+}
+.impact__item {
+	position: relative;
+	flex: 0 0 calc(232 / 1020 * 100%);
+	padding-left: 88px;
+}
+
+.impact__item::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 76px;
+	height: 76px;
+}
+
+.impact__item_ic-1::before {
+	background-image: url("../img/impact/01.svg");
+}
+.impact__item_ic-2::before {
+	background-image: url("../img/impact/02.svg");
+}
+.impact__item_ic-3::before {
+	background-image: url("../img/impact/03.svg");
+}
+.impact__item_ic-4::before {
+	background-image: url("../img/impact/04.svg");
+}
+.impact__count {
+	margin-bottom: 3px;
+	font-weight: 900;
+	font-size: 36px;
+	line-height: 117%;
+	color: #ffffff;
+}
+.impact__descr {
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 150%;
+	letter-spacing: 0.15px;
+	color: #5d62b5;
+}
+.impact__img {
+	position: absolute;
+	top: -71%;
+	right: 0;
+	width: 468px;
+}
+
+.impact__img img {
+	border-radius: 40px;
+}
+/* Section impact end */
